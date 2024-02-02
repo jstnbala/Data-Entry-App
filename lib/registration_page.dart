@@ -20,19 +20,19 @@ class _RegistrationPageState extends State<RegistrationPage> {
       appBar: AppBar(
         title: const Text(
           "College Information Registration",
-          style: TextStyle(color: Color(0xFFFDF0D1)), // Text color of the app bar title
+          style: TextStyle(color: Color(0xFFFDF0D1)), 
         ),
         backgroundColor: Color(0xFF643843),
       ),
       body: Container(
-        color: Color(0xFF607274), // Background color of the box
+        color: Color(0xFF607274), 
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(50.0, 120.0, 50.0, 120.0), // Adjusted padding
+          padding: const EdgeInsets.fromLTRB(50.0, 130.0, 50.0, 150.0), 
           child: Container(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
-              color: Color(0xFFFDF0D1), // Background color of the RegistrationPage
-              border: Border.all(color: Color(0xFF643843), width: 2), // Border color of the box
+              color: Color(0xFFFDF0D1), 
+              border: Border.all(color: Color(0xFF643843), width: 2), 
               boxShadow: [
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.5),
@@ -57,19 +57,16 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   SizedBox(height: 30),
                   ElevatedButton(
                     onPressed: () {
-                      // Get the entered data before navigating
                       String name = nameController.text;
                       String address = addressController.text;
                       String contactNumber = contactNumberController.text;
                       String course = courseController.text;
 
-                      // Clear TextFields before navigating
                       nameController.clear();
                       addressController.clear();
                       contactNumberController.clear();
                       courseController.clear();
 
-                      // Navigate to DetailsPage with the entered data
                       Navigator.of(context).push(
                         MaterialPageRoute(
                           builder: (context) => DetailsPage(
@@ -82,8 +79,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      primary: Color(0xFF643843), // background color
-                      onPrimary: Color(0xFFFDF0D1), // text color
+                      primary: Color(0xFF643843), 
+                      onPrimary: Color(0xFFFDF0D1), 
                     ),
                     child: const Text('SUBMIT DATA'),
                   ),
@@ -101,19 +98,19 @@ class _RegistrationPageState extends State<RegistrationPage> {
       controller: controller,
       decoration: InputDecoration(
         border: OutlineInputBorder(
-          borderSide: BorderSide(color: Color(0xFF643843)), // Outline color of the input field
+          borderSide: BorderSide(color: Color(0xFF643843)), 
         ),
         labelText: labelText,
-        prefixIcon: Icon(icon, color: Color(0xFF643843)), // Icon color
-        labelStyle: TextStyle(color: Color(0xFF643843)), // Font color of the text
+        prefixIcon: Icon(icon, color: Color(0xFF643843)), 
+        labelStyle: TextStyle(color: Color(0xFF643843)), 
         focusedBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Color(0xFF643843)), // Outline color when focused
+          borderSide: BorderSide(color: Color(0xFF643843)), 
         ),
         enabledBorder: OutlineInputBorder(
-          borderSide: BorderSide(color: Color(0xFF643843)), // Outline color when not focused
+          borderSide: BorderSide(color: Color(0xFF643843)), 
         ),
       ),
-      style: TextStyle(color: Color(0xFF643843)), // Font color of the text
+      style: TextStyle(color: Color(0xFF643843)), 
       autofocus: true,
     );
   }
