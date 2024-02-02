@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'CCMOBPGL Mobile Programming Course',
+      title: 'Self-Paced Activity 4 Manage and Handle Flutter Inputs',
       debugShowCheckedModeBanner: false,
       home: RegistrationPage(),
     );

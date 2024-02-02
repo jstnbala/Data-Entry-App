@@ -20,11 +20,11 @@ class DetailsPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text(
           "Details Page",
-          style: TextStyle(color: Color(0xFFFDF0D1)), // Text color of the app bar title
+          style: TextStyle(color: Color(0xFFFDF0D1)), 
         ),
-        backgroundColor: Color(0xFF643843), // Background color of the app bar
+        backgroundColor: Color(0xFF643843), 
       ),
-      backgroundColor: Color(0xFF607274),// Background color of the entire page
+      backgroundColor: Color(0xFF607274),
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
@@ -32,8 +32,8 @@ class DetailsPage extends StatelessWidget {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
-                border: Border.all(color: Color(0xFF643843), width: 2), // Border color of the box
-                color: Color(0xFFFDF0D1), // Background color of the box
+                border: Border.all(color: Color(0xFF643843), width: 3), 
+                color: Color(0xFFFDF0D1), 
               ),
               child: Padding(
                 padding: const EdgeInsets.all(15),
@@ -52,9 +52,9 @@ class DetailsPage extends StatelessWidget {
                           Navigator.of(context).pop();
                         },
                         style: ElevatedButton.styleFrom(
-                          primary: Color(0xFF643843), // Background color of the button
+                          primary: Color(0xFF643843), 
                         ),
-                        child: const Text('CLOSE', style: TextStyle(color: Colors.white)), // Text color of the button
+                        child: const Text('CLOSE', style: TextStyle(color: Colors.white)),
                       ),
                     ),
                   ],
@@ -75,10 +75,10 @@ class DetailsPage extends StatelessWidget {
         children: <Widget>[
           Text(
             label,
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF643843)), // Font color of the label
+            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Color(0xFF643843)), 
           ),
           SizedBox(height: 5),
-          Text(value, style: const TextStyle(fontSize: 16, color: Color(0xFF643843))), // Font color of the value
+          Text(value, style: const TextStyle(fontSize: 16, color: Color(0xFF643843))), 
         ],
       ),
     );
