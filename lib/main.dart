@@ -1,4 +1,4 @@
-import 'package:data_entry_app/registration_page.dart';
+import 'package:data_entry_app/votersregistration_page.dart';
 import 'package:flutter/material.dart';
 
 
@@ -12,9 +12,9 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Self-Paced Activity 4 Manage and Handle Flutter Inputs',
+      title: 'Self-Paced Activity 5 Flutter Form Handling and Validation',
       debugShowCheckedModeBanner: false,
-      home: RegistrationPage(),
+      home: VotersRegistrationPage(),
     );
   }
 }
